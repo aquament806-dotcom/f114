@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Circle Kampus 2025</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #0b0f1a;
+      color: #eaeaea;
+      overflow-x: hidden;
+    }
+    section {
+      min-height: 100vh;
+      padding: 100px 12%;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      position: relative;
+    }
+    .bg-blur {
+      position: absolute;
+      width: 420px;
+      height: 420px;
+      background: radial-gradient(circle, #7f7fd5, #86a8e7, #91eae4);
+      filter: blur(160px);
+      opacity: 0.35;
+      z-index: 0;
+    }
+    .bg1 { top: -120px; left: -120px; }
+    .bg2 { bottom: -120px; right: -120px; }
+
+    h1, h2 {
+      font-family: 'Playfair Display', serif;
+      z-index: 1;
+    }
+    h1 {
+      font-size: 3.6rem;
+      margin-bottom: 20px;
+      line-height: 1.1;
+      background: linear-gradient(90deg, #c9d6ff, #e2e2e2);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    h2 {
+      font-size: 2.6rem;
+      margin-bottom: 20px;
+    }
+    p {
+      max-width: 760px;
+      font-size: 1.05rem;
+      line-height: 1.9;
+      opacity: 0.9;
+      z-index: 1;
+    }
+    .hero {
+      text-align: left;
+    }
+    .hero span {
+      letter-spacing: 3px;
+      font-size: 0.8rem;
+      opacity: 0.7;
+    }
+    .scroll {
+      margin-top: 50px;
+      font-size: 0.85rem;
+      opacity: 0.6;
+    }
+    .quote {
+      margin-top: 35px;
+      padding-left: 25px;
+      border-left: 3px solid #91eae4;
+      font-style: italic;
+    }
+    .gallery {
+      margin-top: 50px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+      gap: 26px;
+      z-index: 1;
+    }
+    .gallery img {
+      width: 100%;
+      height: 320px;
+      object-fit: cover;
+      border-radius: 22px;
+      filter: grayscale(100%) contrast(0.95);
+      transition: all 0.6s ease;
+    }
+    .gallery img:hover {
+      filter: grayscale(0%);
+      transform: scale(1.04);
+    }
+    footer {
+      padding: 80px 12%;
+      text-align: right;
+      font-style: italic;
+      opacity: 0.8;
+    }
+    audio {
+      position: fixed;
+      bottom: 24px;
+      right: 24px;
+      opacity: 0.65;
+      z-index: 99;
+    }
+  </style>
+</head>
+<body>
+
+  <audio controls loop>
+    <source src="https://cdn.pixabay.com/download/audio/2022/03/15/audio_7e7b31a9e1.mp3" type="audio/mpeg">
+  </audio>
+
+  <section class="hero">
+    <div class="bg-blur bg1"></div>
+    <span>2025 · Zain Jiro Iyow Nayla Najwa Nabila Anton</span>
+    <h1>Teman Premature<br>di kampus </h1>
+    <p>
+      Tidak semua pertemuan direncanakan. Beberapa datang begitu saja, lalu perlahan menjadi penting. Tahun 2025 mempertemukanku dengan kalian — circle kampus yang mengubah hari-hari biasa menjadi cerita yang layak dikenang.
+    </p>
+    <div class="scroll">scroll perlahan ↓</div>
+  </section>
+
+  <section>
+    <div class="bg-blur bg2"></div>
+    <h2>Hari-Hari yang Kita Lewati</h2>
+    <p>
+      Tugas menumpuk, deadline mepet, kelas pagi yang terasa berat, dan tawa di sela-sela kelelahan. Bersama kalian, kampus bukan cuma tempat belajar, tapi ruang tumbuh — tempat kita saling menguatkan tanpa banyak kata.
+    </p>
+    <div class="quote">"Beberapa orang datang sebagai teman, lalu diam-diam berubah menjadi rumah."</div>
+  </section>
+
+  <section>
+    <h2>Potongan Kenangan</h2>
+    <p>
+      Foto-foto ini tidak sekadar gambar. Ia menyimpan suara tawa, rasa capek, dan kebahagiaan kecil yang mungkin tidak akan terulang dengan cara yang sama.
+    </p>
+    <div class="gallery">
+      <img src="https://images.unsplash.com/photo-1521737604893-d14cc237f11d">
+      <img src="https://images.unsplash.com/photo-1529156069898-49953e39b3ac">
+      <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70">
+    </div>
+  </section>
+
+  <section>
+    <h2>Jika Suatu Hari Kita Berpisah</h2>
+    <p>
+      Entah setelah lulus atau sibuk dengan jalan masing-masing, semoga kita tetap mengingat bahwa pernah ada masa di mana kita berjalan beriringan. Terima kasih sudah menjadi bagian dari perjalanan ini.
+    </p>
+  </section>
+
+  <footer>
+    dari aku, untuk circle kampus 2025
+  </footer>
+
+</body>
+</html>
